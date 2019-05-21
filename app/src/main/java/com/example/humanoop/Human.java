@@ -47,22 +47,22 @@ public class Human {
         return Log.d("Human","i am sleeping for " + hours + "hours");
 
     }
-    public String speak(String speech){
-        return speech;
+    public void speak(String speech){
+        Log.d("Human",speech);
 
     }
     public void birthday(){
+        int age= getAge();
         age = age + 1;
-        Log.d("Human","you are now " + age);
+        setAge(age);
+//        Log.d("Human","you are now " + age);
 
     }
-    public void birthday(int age){
-        age = age +4;
-        Log.d("Human","you are now" + age);
-    }
-    public void eat(int weight){
+
+
+    public int eat(int weight){
         weight = weight + 2;
-        Log.d("Human","Iam eating food you are now " + weight + "kgs");
+       return Log.d("Human","Iam eating food you are now " + weight + "kgs");
     }
 
 }

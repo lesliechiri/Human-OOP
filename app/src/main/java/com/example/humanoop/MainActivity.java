@@ -29,18 +29,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        Human person = new Human("Leslie",23,75);
-        person.eat();
-        person.sleep();
-        person.sleep(8);
-        person.speak("");
-        Log.d("Human","hi how are u");
-        person.birthday();
-
+//        Human person = new Human("Leslie",23,75);
+//        person.eat();
+//        person.sleep();
+//        person.sleep(8);
+//        person.speak("yeah man");
+////        Log.d("Human","hi how are u");
+//        person.birthday();
+//        Log.d("Human","Your age is " + person.getAge());
+//
 
         Anna person2 = new Anna("Anna",25,80,1);
-        person2.birthday(23);
-        person2.eat(50);
+        person2.eat();
+        Log.d("Human","Anna's new weight is " + person2.getWeight());
+        person2.birthday();
+        Log.d("Human","Anna's new age will be " + person2.getAge());
 
 
 
